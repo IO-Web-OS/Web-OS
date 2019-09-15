@@ -1,6 +1,6 @@
 {
 	"name": "io-webos",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "IO Web OS",
 	"keywords": [
 		"web os"
@@ -23,11 +23,31 @@
 		"url": "git+https://github.com/IO-Web-OS/Web-OS.git"
 	},
 	"license": {
-		"type": "GPL-3.0",
+		"type": "GPL-3.0-or-later",
 		"url": "https://github.com/IO-Web-OS/Web-OS/blob/master/LICENSE"
 	},
 	"bugs": {
 		"url": "https://github.com/IO-Web-OS/Web-OS/issues"
 	},
-	"scripts": {},
+	"scripts": {
+		"start": "concurrently \"cd server && npm start\" \"cd client && npm start\""
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-eslint": "^10.0.3",
+		"concurrently": "^4.1.2",
+		"cross-env": "^5.2.1",
+		"eslint": "^6.4.0",
+		"webpack": "^4.40.2"
+	},
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cuid": "^2.1.6",
+		"dotenv": "^8.1.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.7.1",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
+		"react-router": "^5.0.1"
+	}
 }
