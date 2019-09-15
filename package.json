@@ -29,9 +29,7 @@
 	"bugs": {
 		"url": "https://github.com/IO-Web-OS/Web-OS/issues"
 	},
-	"scripts": {
-		"start": "concurrently \"cd server && npm start\" \"cd client && npm start\""
-	},
+	"scripts": {},
 	"devDependencies": {
 		"babel-core": "^6.26.3",
 		"babel-eslint": "^10.0.3",
