@@ -6,7 +6,7 @@
 		"web os"
 	],
 	"homepage": "https://github.com/IO-Web-OS/Web-OS#readme",
-	"author": [
+	"authors": [
 		{
 			"name": "İbrahim ÖZTÜRK",
 			"url": "https://ibrahimozturk.me/",
@@ -22,12 +22,14 @@
 		"type": "git",
 		"url": "git+https://github.com/IO-Web-OS/Web-OS.git"
 	},
-	"license": {
-		"type": "GPL-3.0",
-		"url": "https://github.com/IO-Web-OS/Web-OS/blob/master/LICENSE"
-	},
+	"license": "GPL-3.0",
 	"bugs": {
 		"url": "https://github.com/IO-Web-OS/Web-OS/issues"
 	},
-	"scripts": {},
+	"scripts": {
+		"start": "concurrently \"cd server && npm start\" \"cd client && npm start\""
+	},
+	"dependencies": {
+		"concurrently": "^4.1.2"
+	}
 }
