@@ -1,0 +1,33 @@
+{
+	"name": "io-webos",
+	"version": "1.0.0",
+	"description": "IO Web OS",
+	"keywords": [
+		"web os"
+	],
+	"homepage": "https://github.com/IO-Web-OS/Web-OS#readme",
+	"author": [
+		{
+			"name": "İbrahim ÖZTÜRK",
+			"url": "https://ibrahimozturk.me/",
+			"email": "work@ibrahimozturk.me"
+		},
+		{
+			"name": "Muhammed Taha AYAN",
+			"url": "https://tahaayan.me/",
+			"email": "tahaayan@gmail.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IO-Web-OS/Web-OS.git"
+	},
+	"license": {
+		"type": "GPL-3.0",
+		"url": "https://github.com/IO-Web-OS/Web-OS/blob/master/LICENSE"
+	},
+	"bugs": {
+		"url": "https://github.com/IO-Web-OS/Web-OS/issues"
+	},
+	"scripts": {},
+}
