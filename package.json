@@ -29,14 +29,22 @@
 	"bugs": {
 		"url": "https://github.com/IO-Web-OS/Web-OS/issues"
 	},
-	"scripts": {},
+	"scripts": {
+		"start": "npm run build && node src/server.js",
+		"start:dev": "concurrently \"webpack-dev-server --config src/config/webpack.devserver.js\" \"nodemon src/server.js\"",
+		"build": "",
+		"test": ""
+	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",
 		"babel-eslint": "^10.0.3",
 		"concurrently": "^4.1.2",
 		"cross-env": "^5.2.1",
 		"eslint": "^6.4.0",
-		"webpack": "^4.40.2"
+		"nodemon": "^1.19.2",
+		"webpack": "^4.40.2",
+		"webpack-dev-middleware": "^3.7.1",
+		"webpack-dev-server": "^3.8.1"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.0",
