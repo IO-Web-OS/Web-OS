@@ -30,7 +30,7 @@
 		"url": "https://github.com/IO-Web-OS/Web-OS/issues"
 	},
 	"scripts": {
-		"start": "npm run build && node src/server.js",
+		"start": "npm run build && node build/server.js",
 		"start:dev": "concurrently \"webpack-dev-server --config src/config/webpack.devserver.js\" \"nodemon src/server.js\"",
 		"build": "",
 		"test": ""
